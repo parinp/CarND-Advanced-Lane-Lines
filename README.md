@@ -80,7 +80,7 @@ def undistort(img,mtx,dist):
 
 Calibrated Chessboard              |
 :---------------------------------:|
-![](readme_files/Chessboard1.png)  |
+![](readme_files/ChessBoard1.png)  |
 
 Undistorted Car Image              |
 :---------------------------------:|
@@ -161,7 +161,7 @@ After which we use 2 different methods to approximate the gradient in a particul
     
 Magnitude           |  Simple Magnitude
 :-------------------------:|:-------------------------:
-![](readme_files/AP1.png)  |  ![](readme_files/AP2.png)
+![](readme_files/AP1.PNG)  |  ![](readme_files/AP2.PNG)
     
 </center>
 
