@@ -502,14 +502,16 @@ This project pushed the limits of computer vision and has helped me learn differ
 
 ### Identify potential shortcomings with your current pipeline
 
-A potential shortcoming in the current pipeline is that it cannot pass the challenge video.  This is mostly because, if the camera were to be obstructed by light.  
+A potential shortcoming in the current pipeline is that it cannot pass the challenge videos.  This could be because of all the different lines detected on the road which might tamper with the detection.  Also lighting problem could arise.
 
 Another shortcoming is that the curvature could need improvement to better determine the exact curvature.
 
 
 ### Suggest possible improvements to your pipeline
 
-A deep learning model could be used in order to detect lane lines instead, this could work against the challenge videos.  It would be nice to explore using this technique when available.
+Firstly, a check can be taken to detect whether the line identified is really a lane line or a noisy line.
+
+Last but not least, a deep learning model could be used in order to detect lane lines instead, this could work against the challenge videos.  It would be nice to explore using this technique when available.  
 
 
 
