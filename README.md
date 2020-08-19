@@ -17,7 +17,7 @@ Table of Contents
 4.  [Perspective Transformation](#perspective-transformation)
 5.  [Fitting Line](#fitting-line)
 6.  [Pipeline](#pipeline)
-7. [Reflection](#reflection)
+7.  [Discussion](#discussion)
 
 Getting Started
 ---
@@ -495,21 +495,25 @@ This is the result of putting everything together!
 </p>
 
 
-Reflection
+Discussion
 ---
 
 This project pushed the limits of computer vision and has helped me learn different and unique tools to be able to better detect lane lines.
 
-### Identify potential shortcomings with your current pipeline
+### any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail?
 
-A potential shortcoming in the current pipeline is that it cannot pass the challenge videos.  This could be because of all the different lines detected on the road which might tamper with the detection.  Also lighting problem could arise.
+A potential shortcoming in the current pipeline is that it cannot pass the challenge videos.  This could be because of all the different lines detected on the road which might tamper with the detection.  It can be seen in the challenge video that it will fail where there is a dark line running within the lane itself.  Also the pipeline could fail when the sun shines directly into the lens.  This will completely block out the images that would be fed into computer for processing.
 
 Another shortcoming is that the curvature could need improvement to better determine the exact curvature.
 
+<p align="center">
+    <img src="readme_files/challenge_h1.gif">
+</p>
 
-### Suggest possible improvements to your pipeline
 
-Firstly, a check can be taken to detect whether the line identified is really a lane line or a noisy line.
+### What could you do to make it more robust?
+
+Firstly, a check can be taken to detect whether the line identified is really a lane line or a noisy line.  This would mean that it can check whether the 2 lines identified curved in the same direction or they are the same distance apart throughout.  If not then a new line can be detected or the old polynomial can be used.
 
 Last but not least, a deep learning model could be used in order to detect lane lines instead, this could work against the challenge videos.  It would be nice to explore using this technique when available.  
 
